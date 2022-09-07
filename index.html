@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./calender.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="contact_box">
+        <div class="contact_widget">
+            <div class="widget_head">
+                <a href="https://google.com">
+                    Get this FREE widget
+                </a>
+                <box-icon name='x' class="close_icon"></box-icon>
+            </div>
+            <div class="widget_section">
+                <img
+                    src="https://c15117557.ssl.cf2.rackcdn.com/avatar/image/98217/normal_66e88252167e9c41f4e8800356051890.jpg">
+                <label>Let's Talk</label>
+            </div>
+
+            <div class="secondary_section">
+                <label>
+                    If I can help in any way, please don't hesitate to set a time to meet or leave your details and I'll
+                    get
+                    back to you.
+                </label>
+
+
+            </div>
+            <div class="btn_container">
+                <button>
+                    <span>Schedule Now</span>
+                    <box-icon color="white" name='chevron-right'></box-icon>
+                </button>
+            </div>
+            <div class="footer_widget">
+                <div class="icon_details">
+                    <div class="icons   schedule_now">
+                        <box-icon name='card'></box-icon>
+
+                    </div>
+                    <label>Schedule Now</label>
+                </div>
+                <div class="icon_details" onclick="leaveDetails()">
+                    <div class="icons">
+                        <box-icon type='solid' name='credit-card'></box-icon>
+                    </div>
+                    <label>Leave Your Details</label>
+                </div>
+                <div class="icon_details" onclick="makePayment()">
+                    <div class="icons">
+                        <box-icon name='envelope'></box-icon>
+                    </div>
+                    <label>Make Payment</label>
+                </div>
+                <div class="icon_details" onclick="makeDocs()">
+                    <div class="icons">
+                        <box-icon name='file-blank'></box-icon>
+                    </div>
+                    <label>Share Document</label>
+                </div>
+                <div class="icon_details    my_account">
+                    <div class="icons">
+                        <box-icon name='user'></box-icon>
+
+                    </div>
+                    <label>MY Account</label>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="contact">
+            Contact
+        </button>
+    </div>
+
+    <div class="full_body">
+        <div class="modal">
+            <div class="modal_head">
+                <div class="profile_details">
+                    <img
+                        src="https://c15117557.ssl.cf2.rackcdn.com/avatar/image/98217/normal_66e88252167e9c41f4e8800356051890.jpg">
+                    <label>Hermeet Suri</label>
+                </div>
+                <div>
+                    <box-icon color="white" name='x' class="modal_close"></box-icon>
+
+                </div>
+            </div>
+            <div class="modal_sec schedule_service">
+                <h3>Please Select A Service:</h3>
+                <div class="schedule_list">
+                    <div class="schedule_content">
+                        <img src="img.jpg">
+                        <div>
+                            <p>Free 20 Minute Discovery Section</p>
+                            <label>20 Min| Free</label>
+                        </div>
+                    </div>
+                    <div class="schedule_content">
+                        <img src="img.jpg">
+                        <div>
+                            <p>Free 20 Minute Discovery Section</p>
+                            <label>20 Min| Free</label>
+                        </div>
+                    </div>
+                    <div class="schedule_content">
+                        <img src="img.jpg">
+                        <div>
+                            <p>Free 20 Minute Discovery Section</p>
+                            <label>20 Min| Free</label>
+                        </div>
+                    </div>
+                    <div class="schedule_content">
+                        <img src="img.jpg">
+                        <div>
+                            <p>Free 20 Minute Discovery Section</p>
+                            <label>20 Min| Free</label>
+                        </div>
+                    </div>
+                    <div class="schedule_content">
+                        <img src="img.jpg">
+                        <div>
+                            <p>Free 20 Minute Discovery Section</p>
+                            <label>20 Min| Free</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leave_details_wrap">
+                <form>
+                    <div class="material-textarea">
+                        <textarea type="text" required></textarea>
+                        <div class="borda"></div>
+                        <label>Subject</label>
+                    </div>
+
+
+                    <div class="material-textarea">
+                        <textarea type="text" required></textarea>
+                        <div class="borda"></div>
+                        <label>Message</label>
+                    </div>
+                    <div>
+                        <button class="blue_btn">submit</button>
+                        <label>You are logged in as <a class="href_text" href="#">dileepkandagatla@gmail.com</a> <a
+                                class="href_text1" href="#">Log out</a>
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+            <div class="doc_details_wrap">
+                <form>
+                    <div class="material-textarea">
+                        <textarea type="file" required></textarea>
+                        <div class="borda"></div>
+                        <label>Select Your Files</label>
+                    </div>
+
+
+                    <div class="material-textarea">
+                        <textarea type="text" required></textarea>
+                        <div class="borda"></div>
+                        <label>Document Titles</label>
+                    </div>
+                    <div class="material-textarea">
+                        <textarea type="text" required></textarea>
+                        <div class="borda"></div>
+                        <label>Message</label>
+                    </div>
+                    <div>
+                        <button class="blue_btn">submit</button>
+                        <label>You are logged in as <a class="href_text" href="#">dileepkandagatla@gmail.com</a> <a
+                                class="href_text1" href="#">Log out</a>
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+            <div class="payment_wrap">
+                <form>
+                    <div class="flex_area">
+                        <div class="material-textarea">
+                            <textarea type="text" required></textarea>
+                            <div class="borda"></div>
+                            <label>pay For</label>
+                        </div>
+                        <div class="material-textarea">
+                            <textarea type="text" required></textarea>
+                            <div class="borda"></div>
+                            <label>Amount</label>
+                        </div>
+                    </div>
+
+
+                    <div class="material-textarea">
+                        <textarea type="number" required></textarea>
+                        <div class="borda"></div>
+                        <label>Notes</label>
+                    </div>
+                    <div>
+                        <button class="blue_btn">Confirm</button>
+                        <!-- <label>You are logged in as <a class="href_text" href="#">dileepkandagatla@gmail.com</a> <a
+                                class="href_text1" href="#">Log out</a>
+                        </label> -->
+                    </div>
+
+                </form>
+            </div>
+            <div class="confirm_wrap">
+                <div class="confirmed_attr">
+                    <img src="https://d459wyoj4brsk.cloudfront.net/public/img/calendar.3b958fc7.svg">
+                    <h3>Confirmed</h3>
+                    <label>Dear Sir or Madam,
+                    </label>
+                    <div>
+                        Thank you for booking your appointment with The Homeopathic Plus Centre Inc. Your appointment
+                        details are below. Should you need to re-schedule your appointment, you can manage your
+                        appointment
+                        details through this email or you can call us at 905-286-9545 or 416-825-9289.
+
+                    </div>
+                    <div class="text1">
+                        <span> Please note:</span> Should you need to cancel your appointment, our cancellation policy
+                        requires that
+                        you notify us within 24hrs notice of your scheduled appointment. Any cancellation made less than
+                        24hours before the scheduled appointment time will be subject to a cancellation fee of $90.00.
+
+                    </div>
+                    <div>
+                        Please use the following 2 links to access the documents that need to be filled in prior to your
+                        1st appointment. You do not need to fill it out if you are having a follow-up.
+
+                    </div>
+                    <a>
+                        "Patient Agreement Form - Homeopathy"
+
+                    </a>
+                    <a>"Adult form" or "Child form" (up to age 5)
+                    </a>
+                    <div>
+                        Please note when filling the forms don't press enter key as it submits the form. Use tab or
+                        mouse to complete the form. There is 44 question for the Adult form.
+
+                    </div>
+                    <div>Thank You & Best Wishes
+                    </div>
+                    <div>The Homeopathic Plus Centre
+                    </div>
+                    <div>
+                        853 Spinning Wheel Crescent,
+
+                    </div>
+                    <div>
+                        Mississauga, ON, L5W 1W4
+
+                    </div>
+                    <div>
+                        Tel. 905-286-9545 or 416-825-9289
+
+                    </div>
+                    <a>www.homeopathicpluscentre.com
+                    </a>
+                    <div>
+
+                        Booking details will be sent to:
+                        dileepkandagatla@gmail.com
+
+                    </div>
+                    <button class="blue_btn">Great,Thanks</button>
+                </div>
+            </div>
+            <div class="calendar_wrap">
+                <div class="calendar modal_sec">
+
+                    <div class="month">
+                        <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li class="current_month">
+                                August<br>
+                            </li>
+                            <span style="font-size:18px" class="current_year">2021</span>
+
+                        </ul>
+                    </div>
+
+                    <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+
+                    <ul class="days">
+
+                    </ul>
+                </div>
+                <div class="notes">
+                    <form class="form1 back_white">
+
+
+
+                        <div class="group">
+                            <input type="text" required class="input">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="label">Notes</label>
+
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <label>I have read and accept<span><a href="#" class="href_a">Hameert Suri Terms of
+                                        Service</a></span></label>
+                        </div>
+                        <!-- <div class="flex_item"> -->
+                        <!-- <button class="submit_btn" onclick="handleEmailSubmit()">Submit</button> -->
+                        <!-- </div> -->
+
+                    </form>
+                </div>
+                <div class="booking">
+                    <div class="booking_head">Booking Summary</div>
+                    <img src="./img.jpg">
+                    <div>Free 20 Minute Discovery Session
+                    </div>
+                    <div class="border_bottom">
+                        20 min
+                    </div>
+                    <div class="border_bottom">
+                        Free
+                    </div>
+                    <div class="border_bottom">
+                        <img src="./img.jpg"> <span> Hermeet Suri
+                        </span>
+                    </div>
+                    <div>
+                        <button class="blue_btn" onclick="handleBlueBtn(this)">Continue</button>
+                    </div>
+                </div>
+            </div>
+            <div class="timings">
+                <header class="headers">
+                    <button>morning</button>
+                    <button>Evening</button>
+                    <button>AfterNoon</button>
+
+                </header>
+                <section class="timing_section">
+                    <button class="time_element">
+                        11:30
+                    </button>
+                    <button class="time_element">
+                        11:30
+                    </button><button class="time_element">
+                        11:30
+                    </button><button class="time_element">
+                        11:30
+                    </button><button class="time_element">
+                        11:30
+                    </button>
+                </section>
+            </div>
+            <div class="myaccount_wrap">
+                <form class="form1">
+
+
+
+                    <div class="group">
+                        <input type="text" required class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="label">Email</label>
+
+                    </div>
+                    <!-- <div class="flex_item"> -->
+                    <button class="submit_btn" onclick="handleEmailSubmit()">Submit</button>
+                    <!-- </div> -->
+
+                </form>
+                <form class="form2">
+                    <div class="group">
+                        <input type="text" required class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="label">OTP</label>
+
+                    </div>
+                    <!-- <div class="flex_item"> -->
+                    <button class="submit_btn" onclick="handleOtpSubmit()">Submit OTP</button>
+                    <!-- </div> -->
+
+                </form>
+                <form class="form3">
+                    <div class="account_flex">
+                        <div class="first_box">
+                            <div class="first_flex">
+                                <div class="user_blue">
+                                    <box-icon name='user' color="white"></box-icon>
+
+                                </div>
+                                <div>
+                                    Welcome Dinesh
+                                </div>
+                            </div>
+                            <div class="text">
+                                Our client portal is a secure, easy​ ​way to ​perform actions online and track past
+                                activities. ​​
+                                <a href="#">Bookings
+                                    Documents</a>
+                            </div>
+                            <div class="flex_items">
+                                <div class="flex_content">
+                                    <box-icon size="" type='solid' name='phone-call'></box-icon>
+                                    <a href="tel:9876543210">9876543210</a>
+                                </div>
+                                <div class="flex_content">
+                                    <box-icon size="" name='envelope'></box-icon>
+                                    <a class="mailto" href="mailto:john@syoft.com">john@syoft.com</a>
+
+                                </div>
+                                <div class="flex_content">
+                                    <box-icon size="" name='globe'></box-icon>
+                                    <a href="https://syoft.com">syoft.com </a>
+
+                                </div>
+                                <div class="flex_content">
+                                    <box-icon size="" name='current-location'></box-icon>
+                                    <a href="853 Spinning Wheel Crescent">853 Spinning Wheel Crescent</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second_flex">
+                            <div class="box_container" onclick="onBoxContainerClick()">
+                                <div class="blue_container">
+                                    <box-icon size="" name='current-location' color="white"></box-icon>
+
+                                </div>
+                                <div>Schedule Now</div>
+                            </div>
+                            <div class="box_container" onclick="onBoxContainerClick()">
+                                <div class="blue_container">
+                                    <box-icon size="" name='current-location' color="white"></box-icon>
+
+                                </div>
+                                <div>Schedule Now</div>
+                            </div>
+                            <div class="box_container" onclick="onBoxContainerClick()">
+                                <div class="blue_container">
+                                    <box-icon size="" name='current-location' color="white"></box-icon>
+
+                                </div>
+                                <div>Schedule Now</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+<script src="./app.js"></script>
+
+</html>
