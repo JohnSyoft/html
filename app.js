@@ -13,9 +13,9 @@ const myAccount = document.querySelector(".my_account");
 const calandarWrap = document.querySelector(".calendar_wrap");
 const timings = document.querySelector(".timings");
 const myAccountWrap = document.querySelector(".myaccount_wrap");
-const form1 = document.querySelector(".form1");
-const form2 = document.querySelector(".form2");
-const form3 = document.querySelector(".form3");
+const form1 = document.querySelector("#form1");
+const form2 = document.querySelector("#form2");
+const form3 = document.querySelector("#form3");
 const previous = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const notes = document.querySelector(".notes");
@@ -499,14 +499,19 @@ myAccount.addEventListener("click", () => {
   contactWidget.style.display = "none";
   fullBody.style.display = "grid";
   calandarWrap.style.display = "none";
+  form1.style.display = "flex";
+  form2.style.display = "none";
+  form3.style.display = "none";
+
   timings.style.display = "none";
   myAccountWrap.style.display = "block";
 });
 
 function handleEmailSubmit() {
-  form1.style.display = "none";
   form3.style.display = "none";
   form2.style.display = "flex";
+  form1.style.display = "none";
+  // form1.classList.toggle("form1");
 }
 
 function handleOtpSubmit() {
